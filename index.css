@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styling for the event stream */
+.custom-scrollbar::-webkit-scrollbar { 
+  width: 5px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track { 
+  background: transparent; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb { 
+  background: #1e293b; 
+  border-radius: 20px; 
+  border: 2px solid transparent; 
+}
+
+/* Utility classes that need specific dark mode adjustments */
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+}
